@@ -63,12 +63,26 @@ calculadora-python/
    git clone https://github.com/DS-RFTA/meus-projetos-python.git
    ```
 
+---
 
-2. **Acesse a pasta do projeto:**
+2. ###  Criar e Ativar um Ambiente Virtual (Recomendado)
 
-   ```bash
-   cd SEU_REPOSITORIO
-   ```
+O uso de um ambiente virtual isola o projeto e evita conflitos entre versões de bibliotecas.
+
+- **No Windows:**
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+- **No Linux/macOS:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+---
+
 
 3. **Execute o script:**
 
