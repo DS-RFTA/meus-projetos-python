@@ -74,12 +74,29 @@ calculadora-python/
 
 ---
 
+## 📝 Exemplo de Uso
+
+Ao iniciar o programa, você verá o seguinte fluxo no terminal:
+
+```text
+===== CALCULADORA =====
+Escolha uma operação: 
+1 - Soma 
+2 - Subtração 
+3 - Multiplicação 
+4 - Divisão 
+========================
+Digite o número da operação: 4
+Digite o primeiro número: 10
+Digite o segundo número: 3
+Resultado: 10.0 / 3.0 = 3.33
+```
+---
 ## 📄 Licença
 
 Este projeto está sob a licença [MIT](LICENSE). Sinta-se à vontade para utilizar, modificar e distribuir conforme desejar.
 
 ---
-Feito com 🎧, muito café.
 
 <p align="center">
  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Feito%20com%20🎧,%20muito%20café.&fontSize=40&section=footer">
