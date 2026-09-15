@@ -72,6 +72,14 @@ calculadora-python/
 
 3. **Execute o script:**
 
+4. ###  Executar a Aplicação
+
+Execute o arquivo principal pelo terminal:
+
+```bash
+python calculadora.py
+```
+
 ---
 
 ## 📝 Exemplo de Uso
