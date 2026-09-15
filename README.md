@@ -60,7 +60,7 @@ calculadora-python/
 1. **Clone este repositório:**
 
    ```bash
-   git clone https://github.com/DS-RFTA/calculadora
+   git clone https://github.com/DS-RFTA/meus-projetos-python.git
    ```
 
 
