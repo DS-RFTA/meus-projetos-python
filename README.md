@@ -43,11 +43,18 @@ calculadora-python/
 
 ```
 
-## 🚀 Como rodar o projeto na sua máquina
+## Como rodar o projeto na sua máquina
 
 
 ### Pré-requisitos
 
+Para rodar este projeto localmente, você precisa ter instalado:
+
+- [Python 3.8+](https://www.python.org/downloads/)
+- Gerenciador de pacotes `pip` (geralmente instalado junto ao Python)
+- Git (opcional, para clonar o repositório)
+
+---
 
 ### Passo a Passo
 
