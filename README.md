@@ -5,23 +5,43 @@
 
 # Calculadora
 
-![Static Badge](https://img.shields.io/badge/:badgeContent)
-
-Uma aplicação prática e didática desenvolvida em Python para realização das quatro operações aritméticas fundamentais (soma, subtração, multiplicação e divisão), com tratamento básico para divisão por zero e validação de entrada de opções.
 
 
-![Html](https://img.shields.io/badge/html-red?style=for-the-badge&logo=html)
+
+
+
+
 ![Python](https://img.shields.io/badge/python-yellow?style=for-the-badge&logo=Python)
-![CSS](https://img.shields.io/badge/CSS-purple?style=for-the-badge&logo=CSS)
 ![Status](https://img.shields.io/badge/Status-Em%90Desenvolvimento-green?style=for-the-badge)
 
 
 
 ## 💡 Sobre o Projeto
 
+Uma aplicação prática e didática desenvolvida em Python para realização das quatro operações aritméticas fundamentais (soma, subtração, multiplicação e divisão), com tratamento básico para divisão por zero e validação de entrada de opções.
 
 ## 🛠️ Funcionalidades
 
+- **Soma (`+`)**: Adição de dois valores numéricos.
+- **Subtração (`-`)**: Diferença entre dois valores.
+- **Multiplicação (`×`)**: Produto de dois fatores.
+- **Divisão (`÷`)**: Quociente formatado em até duas casas decimais.
+- **Tratamento de Exceções**: Prevenção contra divisões por zero (`ZeroDivisionError`).
+- **Validação de Menu**: Notificação visual para escolhas de menu inexistentes.
+
+- ---
+
+## 📂 Estrutura do Projeto
+
+Recomendamos organizar os arquivos do projeto da seguinte forma:
+
+```text
+calculadora-python/
+│
+├── calculadora.py       # Script principal com a lógica da calculadora
+├── README.md            # Documentação e instruções de uso
+
+```
 
 ## 🚀 Como rodar o projeto na sua máquina
 
