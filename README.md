@@ -73,6 +73,12 @@ calculadora-python/
 3. **Execute o script:**
 
 ---
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE). Sinta-se à vontade para utilizar, modificar e distribuir conforme desejar.
+
+---
 Feito com 🎧, muito café.
 
 <p align="center">
