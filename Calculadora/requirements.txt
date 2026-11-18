@@ -1,0 +1,9 @@
+# Requisitos do Projeto Calculadora Simples
+# Este projeto nÊ£o utiliza bibliotecas externas.
+# Python 3.6+ jßº inclui tudo o que vocÞ¢ precisa.
+
+# Caso deseje adicionar funcionalidades futuras, descomente as linhas abaixo:
+
+# pytest>=7.0.0          # Para testes unitßºrios
+# flask>=2.0.0           # Para criar uma API web
+# tkinter                # Para interface grßºfica desktop (jßº incluso no Python)

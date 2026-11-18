@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>===== CALCULADORA =====</h1>
+            
+            <div class="operation-group">
+                <label for="operation">Escolha uma operação:</label>
+                <select id="operation" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="1">1 - Soma (+)</option>
+                    <option value="2">2 - Subtração (-)</option>
+                    <option value="3">3 - Multiplicação (×)</option>
+                    <option value="4">4 - Divisão (÷)</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="num1">Primeiro número:</label>
+                <input type="number" id="num1" step="any" placeholder="Digite o primeiro nœmero" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="num2">Segundo número:</label>
+                <input type="number" id="num2" step="any" placeholder="Digite o segundo nœmero" required>
+            </div>
+            
+            <button onclick="calcular()" class="btn-calculate">Calcular</button>
+            <button onclick="limpar()" class="btn-clear">Limpar</button>
+            
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            const operation = document.getElementById('operation').value;
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultDiv = document.getElementById('result');
+            
+            if (!operation || isNaN(num1) || isNaN(num2)) {
+                resultDiv.innerHTML = '<p class="error">Por favor, preencha todos os campos corretamente!</p>';
+                return;
+            }
+            
+            let resultado;
+            let operacaoTexto;
+            
+            switch(operation) {
+                case '1':
+                    resultado = num1 + num2;
+                    operacaoTexto = '+';
+                    break;
+                case '2':
+                    resultado = num1 - num2;
+                    operacaoTexto = '-';
+                    break;
+                case '3':
+                    resultado = num1 * num2;
+                    operacaoTexto = '×';
+                    break;
+                case '4':
+                    if (num2 === 0) {
+                        resultDiv.innerHTML = '<p class="error">Erro: Não é possível dividir por zero!</p>';
+                        return;
+                    }
+                    resultado = num1 / num2;
+                    operacaoTexto = '÷';
+                    break;
+                default:
+                    resultDiv.innerHTML = '<p class="error">Operação inválida!</p>';
+                    return;
+            }
+            
+            resultDiv.innerHTML = `
+                <div class="success">
+                    <p><strong>Resultado:</strong></p>
+                    <p class="result-value">${num1} ${operacaoTexto} ${num2} = ${resultado.toFixed(2)}</p>
+                </div>
+            `;
+        }
+        
+        function limpar() {
+            document.getElementById('operation').value = '';
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('result').innerHTML = '';
+        }
+        
+        // Permitir calcular com Enter
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calcular();
+            }
+        });
+    </script>
+</body>
+</html>
